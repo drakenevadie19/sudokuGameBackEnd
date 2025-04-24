@@ -1,0 +1,39 @@
+# Just copy paste application-dev.yml for development purposes.
+spring:
+  profiles:
+    active: local
+#    active: dev
+  application:
+    name: Sudoku-Game-BackEnd
+api:
+  endpoint:
+    base-url: /api/v1
+server:
+  environment: ${PROD_ENVIRONMENT}
+
+#  datasource:
+#    url: jdbc:mysql://${DB_HOST}:${DB_PORT}/${DB_NAME}
+#    username: ${DB_USERNAME}
+#    password: ${DB_PASSWORD}
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#  jpa:
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: none
+#
+#  #setup email config
+#  mail:
+#    host: smtp.gmail.com
+#    port: 587
+#    username: ${MAIL_SERVER_USERNAME}
+#    #    password will be set as env var when deploy for security
+#    password: ${MAIL_SERVER_PASSWORD}
+#    properties:
+#      mail:
+#        transport:
+#          protocol: smtp
+#        debug: true
+#        smtp:
+#          auth: true
+#          starttls:
+#            enable: true
