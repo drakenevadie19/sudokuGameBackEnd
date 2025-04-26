@@ -1,11 +1,11 @@
 spring:
-  datasource:
-    url: jdbc:postgresql://shortline.proxy.rlwy.net:35639/railway
-    username: postgres
-    password: ZQtojqqaEPfEZiBuFAAIWBdzkYrzFCrH
-    driver-class-name: org.postgresql.Driver
+#  datasource:
+#    url: jdbc:postgresql://shortline.proxy.rlwy.net:35639/railway
+#    username: postgres
+#    password: ZQtojqqaEPfEZiBuFAAIWBdzkYrzFCrH
+#    driver-class-name: org.postgresql.Driver
   jpa:
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
+#    database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: update  # Change to "validate" in production
     show-sql: true
@@ -13,9 +13,9 @@ spring:
       hibernate:
         format_sql: true
 
-api:
-  endpoint:
-    base-url: /api/v1
+#api:
+#  endpoint:
+#    base-url: /api/v1
 server:
   environment: dev
   port: 8080
